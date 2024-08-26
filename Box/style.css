@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* to allow scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container{
+    position: fixed;
+}
+
+.box{
+     width: 100px;
+     height: 100px;
+     background-color: #ff5733;
+     transition: transform 1s ease-in-out;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
